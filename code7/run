@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+g++ $1.cpp -o $1.exe
+if (($? == 0)); then
+    ./$1.exe
+else
+    echo "compile failed!"
+fi
+
+
+
+
